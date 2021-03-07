@@ -1,0 +1,44 @@
+.left-title, h4, h5, h6{
+    font-size: 20px;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    color: #233329;
+}
+.container {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 20px 30px 30px 0;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 130px;
+  } 
+
+.result{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.active{
+    background-color: lightgray;
+}
+
+h1{
+    font-size: 35px;
+    color: gray;
+}
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 15px;
+        color: gray;
+    }
+   
+}
+@media only screen and (min-width: 992px) {
+    h1{
+        font-size: 35px;
+        margin-bottom: -20px;   
+    }
+}
+

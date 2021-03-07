@@ -1,0 +1,113 @@
+<div class="container">
+  <div class="row">
+      <h1 class = "text" style = "font-size: 25px;">Welcome! Register</h1>
+      <hr style = "width:70%">
+      <p class = "text" style = "color: grey; font-size: 12px;">Please fill in this form to create an account<p> <br>
+          <form (ngSubmit)="saveuser()">
+            <input type="text" placeholder="Enter FirstName" name="f_name" id="f_name" [(ngModel)]="register.f_name" required><br>
+            <input type="text" placeholder="Enter MiddleName" name="m_name" id="m_name" [(ngModel)]="register.m_name" required><br>
+            <input type="text" placeholder="Enter LastName" name="l_name" id="l_name" [(ngModel)]="register.l_name" required><br>
+            <input type="password" placeholder="Enter Password" name="password" id="password" [(ngModel)]="register.password" required><br>
+            <input type="number" placeholder="Enter age" name="age" id="age" [(ngModel)]="register.age" required> <br>
+            <input type="email" placeholder="Enter email_id" name="email_id" id="email_id" [(ngModel)]="register.email_id" required><br>
+            <input type="number" placeholder="Enter mobile_no" name="mobile_no" id="mobile_no" [(ngModel)]="register.mobile_no" required><br>
+        
+            <button type="submit" class="registerbtn">Register</button>
+            <a href="/login" class='btn register'>Login</a>
+      </form>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+      <h1 class = "text" style = "font-size: 25px;">Welcome! Register</h1>
+      <hr style = "width:70%">
+      <p class = "text" style = "color: grey; font-size: 12px;">Please fill in this form to create an account<p> <br>
+          <form [formGroup]="registerForm" (ngSubmit)="saveuser()">
+            
+            <div class="form-group">          
+              <input type="text" placeholder="Enter FirstName" class="form-control" 
+              formControlName="f_name" [ngClass]="{ 'is-invalid': submitted && fval.f_name.errors}"><br>
+              <div *ngIf="submitted && fval.f_name.errors" class="invalid-feedback">
+                <div *ngIf="fval.f_name.errors.required">
+                  First Name is required and must be a valid name
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">          
+              <input type="text" placeholder="Enter MiddleName" formControlName="m_name" 
+              name="m_name" id="m_name"
+              [ngClass]="{ 'is-invalid': submitted && fval.m_name.errors }"><br>
+              <div *ngIf="submitted && fval.m_name.errors" class="invalid-feedback">
+                <div *ngIf="fval.m_name.errors.required">
+                  Middle Name is required and must be a valid name
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">          
+              <input type="text" placeholder="Enter LastName" formControlName="l_name" 
+               name="l_name" id="l_name" 
+              [ngClass]="{ 'is-invalid': submitted && fval.l_name.errors }"><br>
+              <div *ngIf="submitted && fval.l_name.errors" class="invalid-feedback">
+                <div *ngIf="fval.l_name.errors.required">
+                  Last Name is required and must be a valid name
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">          
+              <input type="email" placeholder="Enter email id"  formControlName="email_id" 
+              [ngClass]="{ 'is-invalid': submitted && fval.email_id.errors }"><br>
+              <div *ngIf="submitted && fval.email_id.errors" class="invalid-feedback">
+                <div *ngIf="fval.email_id.errors.required">
+                  Email is required and must be a valid name
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">          
+              <input type="password" placeholder="Enter Password" formControlName="password" 
+              [ngClass]="{ 'is-invalid': submitted && fval.password.errors }"><br>
+              <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
+                <div *ngIf="fval.password.errors.required">
+                 Password is required and must be a valid name
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group">          
+            <input type="number" placeholder="Enter age"  formControlName="age"  
+            [ngClass]="{ 'is-invalid': submitted && fval.age.errors }"><br>
+            <div *ngIf="submitted && fval.age.errors" class="invalid-feedback">
+              <div *ngIf="fval.age.errors.required">
+                Age is required and must be a valid name
+              </div>
+            </div>
+          </div>
+           
+          <div class="form-group">          
+            <input type="number" placeholder="Enter mobile_no" formControlName="mobile_no"
+            [ngClass]="{ 'is-invalid': submitted && fval.mobile_no.errors }"><br>
+            <div *ngIf="submitted && fval.mobile_no.errors" class="invalid-feedback">
+              <div *ngIf="fval.mobile_no.errors.required">
+                Mobile number is required and must be a valid name
+              </div>
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+            
+          <a href="/login" class='btn register'>Login</a>
+      </form>
+  </div>
+</div> -->
+

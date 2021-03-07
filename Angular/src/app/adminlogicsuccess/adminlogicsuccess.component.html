@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <h1 class="text" style = "vertical-align: middle; font-weight:500; font-size: 30px; float: left; padding-left: 15px;">Admin Dashboard</h1>
+            <span style="vertical-align: middle; float: right;"> <a class = "btn login" (click)="redirect()">Logout</a> </span> <br>
+        </div>
+        <div style="margin-top: 100px;"></div>
+        <div>
+        <p class = "text" style = "color: grey; font-size: 16px;">Welcome to your Dashboard.<p>
+        <hr style = "width: 70%; height: 2px; border: 0; background-color: rgb(214, 214, 214);">
+            <br>
+        <a class = "btn login" routerLink='/view-all-user'>View All Users</a> <br>
+        <a class = "btn login" routerLink = '/view-clients'>Clients</a> <br>
+        <a class = "btn login" routerLink='/view-application'>Application</a> <br>
+        <a class = "btn login" routerLink='/view-rejected'>Rejected List</a> <br><br>
+            <br><br>
+        </div>
+    </div>
+</div>
+

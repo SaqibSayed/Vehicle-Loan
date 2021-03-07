@@ -1,0 +1,58 @@
+<div class="container" *ngIf="employment_details">
+    <div class="row">
+    <h1 class="text">1. Employment Details</h1>
+    <hr style = "width:70%">
+    <form>
+      <input type="text"  placeholder="Company Name"  name="company_name" [(ngModel)]="applyLoanM.company_name" ngDefaultControl />
+      <input type="number"  placeholder="Monthly Income"  name="monthly_income" [(ngModel)]="applyLoanM.monthly_income" ngDefaultControl/>
+      <input type="number"  placeholder="Work Experience"  name="work_experience" [(ngModel)]="applyLoanM.work_experience" ngDefaultControl/>
+      <input type="text"  placeholder="Type of Employment"  name="type_of_employment" [(ngModel)]="applyLoanM.type_of_emp" ngDefaultControl />
+        <input type="number" placeholder="Existing EMI" id="existing_emi" name="existing_emi" [(ngModel)]="applyLoanM.existing_emi" ngDefaultControl />
+        <button type="button" class="btn btn-success" (click)="saveEmploymentDetails()"  name="btn-apply" ngDefaultControl>Save</button>
+    </form>
+    </div>
+</div>
+
+<div class="container" *ngIf="vehicle_details">
+    <div class="row">
+    <h1 class="text">2. Vehicle Details</h1>
+    <hr style = "width:70%">
+        <form action="">
+            <input type="text"  placeholder="Car Make" id="car_make" name="car_make" [(ngModel)]="applyLoanM.vehicle_company" ngDefaultControl />
+            <input type="text"  placeholder="Car Model" id="car_model" name="car_model" [(ngModel)]="applyLoanM.vehicle_model" ngDefaultControl/>
+            <input  type="number" placeholder="Showroom Price" id="ex_shoroom_price" name="ex_shoroom_price" [(ngModel)]="applyLoanM.ex_showroom_price" ngDefaultControl />
+          <input  type="number" placeholder="On Road Price" id="on_road_price" name="on_road_price" [(ngModel)]="applyLoanM.on_road_price" ngDefaultControl />
+            <button type="button" class="btn btn-success" (click)="saveVehicleDetails()" placeholder="" id="btn-apply" name="btn-apply" ngDefaultControl>Save</button>
+        </form>
+        </div>
+</div>
+
+<div class="container" *ngIf="loan_details">
+    <div class="row">
+    <h1 class="text">3  . Loan Details</h1>
+        <form action="">
+            <input type="number"  placeholder="Loan Amount" id="loan_amount" name="loan_amount" [(ngModel)]="applyLoanM.loan_amount" ngDefaultControl />
+            <input type="number"  placeholder="Loan Tenure" id="loan_tenure" name="loan_tenure" [(ngModel)]="applyLoanM.loan_tenure" ngDefaultControl/>
+            <input  type="number" placeholder="Rate of Interest" id="roi" name="roi" [(ngModel)]="applyLoanM.roi" ngDefaultControl />
+          <input  type="number" placeholder="Existing Emi" id="emi" name="emi" [(ngModel)]="applyLoanM.emi" ngDefaultControl />
+          <input type="text"  placeholder="Account Type" id="loan_amount" name="loan_amount" [(ngModel)]="applyLoanM.account_type" ngDefaultControl />
+          <label for="">Processing Fee
+            <input type="text"  placeholder="Processing_fee"    class="text-center" [value]="myDefaultValue" ngDefaultControl [disabled]="true"/></label>
+          
+            <button type="button" class="btn btn-success" (click)="saveLoanDetails()" placeholder="" id="btn-apply" name="btn-apply" ngDefaultControl>Save</button>
+        </form>
+        </div>
+</div>
+
+<!--<div class="container" *ngIf="identity_details">
+    <div class="row">
+    <h1 class="text">5. Identity Details</h1>
+        <form action="">
+                <input type="string"  placeholder="Aadhar Card" id="aadhar_card" name="aadhar_card" [(ngModel)]="applyLoanM.aadhar_card" ngDefaultControl />
+                <input type="string"  placeholder="PAN Card" id="pan_card" name="pan_card" [(ngModel)]="applyLoanM.pan_card" ngDefaultControl/>
+                <input  type="string" placeholder="Photo" id="photo" name="photo" [(ngModel)]="applyLoanM.photo" ngDefaultControl />
+                <input type="string"  placeholder="6 Months Salary Slip" id="salary_slip" name="salary_slip" [(ngModel)]="applyLoanM.salary_slip" ngDefaultControl/>
+                <button type="button" class="btn btn-success" id="btn-apply" (click)="applyLoan()" name="btn-apply" ngDefaultControl>Submit</button>
+        </form>
+        </div>
+</div>-->

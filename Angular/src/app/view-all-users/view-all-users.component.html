@@ -1,0 +1,35 @@
+<div class = "container">
+    <div class="row">
+        <br><br>
+        <h1 class = "text" style = "font-size: 25px;">Registered User List</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 15px;">List of the users registered with us.<p> <br>
+    </div>
+    <table id = "table">
+        <tr>
+          <th> INDEX </th>
+          <th> USER ID</th>
+          <th> FIRST NAME </th>
+          <th> LAST NAME </th>
+          <th> EMAIL </th>
+          <th> AGE </th>
+          <th> TYPE </th>
+        </tr>
+      <tr *ngFor = "let user of AllUserList; let index = index;">
+        <td> {{index + 1}} </td>
+        <td> {{user.user_id}} </td>
+        <td> {{user.f_name}} </td>
+        <td> {{user.l_name}} </td>
+        <td> {{user.age}} </td>
+        <td> {{user.email_id}} </td>
+        <td> {{user.role}} </td>
+      </tr>
+      </table>
+  <a class = "btn login" routerLink='/loginAdminSuccess'>BACK</a> <br><br>
+</div>
+
+
+
+
+
+

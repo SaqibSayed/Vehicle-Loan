@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <h1 class="text" style = "vertical-align: middle; font-weight:500; font-size: 30px; float: left; padding-left: 15px;">User Dashboard</h1>
+            <span style="vertical-align: middle; float: right;"> <button class = "btn login" (click)="redirect()">Logout</button> </span> <br>
+        </div>
+        <div style="margin-top: 100px;"></div>
+        <div>
+            <p class = "text" style = "color: grey; font-size: 16px;">Dear {{userName}}! Welcome to your Dashboard, your UserID is {{userId}}<p>
+            <hr style = "width: 70%; height: 2px; border: 0; background-color: rgb(214, 214, 214);">
+            <br>
+            <a routerLink="/dashboard" class = "btn login">User Details</a> <br>
+            <a routerLink="/checkEligibility" class = "btn login">Apply Loan</a> <br>
+            <a routerLink="/check-loan-status" class = "btn login">Check Loan Status</a> <br><br><br><br><br>
+           
+
+        </div>
+    </div>
+</div>
